@@ -14,11 +14,12 @@ const server = http.createServer((req,res)=>{
         res.end();
     }
     // task
-    // blocking Code
+    // blocking Code_Codigo bloqueante
     if(req.url === '/about'){
-        for(let i=0;i<100000;i++){
-            console.log(Math.random()*i);
-        }
+
+        // for(let i=0;i<100000;i++){
+        //     console.log(Math.random()*i);
+        // }
         return res.end("Not page");
     }
     res.end("Not found");

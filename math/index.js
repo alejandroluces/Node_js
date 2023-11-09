@@ -1,16 +1,16 @@
-const add = (a,b) =>{
+export function add (a,b) {
     return a + b
 }
 
-const substrac = (a,b) =>{
+export function substrac (a,b) {
     return a-b
 }
 
-const multiplicate = (a,b) =>{
+export function multiplicate (a,b) {
     return a * b
 }
 
-const divide = (a,b) =>{
+export function divide (a,b) {
     return a / b
 }
 
@@ -21,7 +21,7 @@ const divide = (a,b) =>{
 
 // Con esto exportamos todas estas funciones creadas para usarlo en otro archivo.
 
-module.exports = {
+export default {
     add,
     substrac,
     multiplicate,
